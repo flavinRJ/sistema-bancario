@@ -89,7 +89,7 @@ def listar_contas(contas):
         linha = f"""\
             Agência:\t{conta['agencia']}
             c/c:\t\t{conta['numero_conta']}
-            titular:\t{conta['usuario']['none']}
+            titular:\t{conta['usuario']['nome']}
         """
         print("=" * 100)
         print(textwrap.dedent(linha))
